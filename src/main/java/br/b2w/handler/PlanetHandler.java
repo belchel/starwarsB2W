@@ -30,4 +30,12 @@ public class PlanetHandler implements IPlanetHandler {
 	public Planet getById(UUID id) {
 		return this.planetRepository.findOne(id);
 	}
+	
+	public Planet getByName(String name) {
+		return this.planetRepository.findByName(name) ;
+	}
+	
+	public void deleteById(UUID id) {
+		this.planetRepository.delete(id) ;
+	}
 }

@@ -11,6 +11,8 @@ public interface IPlanetHandler {
 	public Planet save(Planet planet);
 	
 	public Planet getById(UUID id);
-
 	
+	public Planet getByName(String name);
+
+	public void deleteById(UUID id);
 }	
